@@ -26,6 +26,7 @@ The analysis shows that teams run and pass at nearly equal rates in the red zone
 - Random Forest
 
 **Building Best Model**
+
 XGBoost and Random Forest are both effective tree-based models, each with its own strengths. While Random Forest is faster and more interpretable, XGBoost typically provides higher accuracy by capturing complex patterns through sequential learning and regularization. After testing both models, XGBoost outperformed Random Forest in predictive accuracy. Therefore, XGBoost was selected as the final model for this project.
 
 ## XGB Classifier
