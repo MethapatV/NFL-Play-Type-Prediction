@@ -23,11 +23,13 @@ The analysis shows that teams run and pass at nearly equal rates in the red zone
 ## Models
 - XGB Classifier
 - Random Forest
+
 **Building Best Model**
 XGBoost and Random Forest are both effective tree-based models, each with its own strengths. While Random Forest is faster and more interpretable, XGBoost typically provides higher accuracy by capturing complex patterns through sequential learning and regularization. After testing both models, XGBoost outperformed Random Forest in predictive accuracy. Therefore, XGBoost was selected as the final model for this project.
 
 ## XGB Classifier
-![XGB](images/pm25_prediction_plot.png)
+![XGB](https://github.com/MethapatV/NFL-Play-Type-Prediction/blob/main/CONF_NFL.png)
+
 The confusion matrix shows that the model predicts "Run" plays more accurately than "Pass" plays, with an overall accuracy of 66.5%. Precision, recall, and F1-score for "Run" are 72%, while those for "Pass" are lower at 58%, indicating a bias toward predicting "Run." This imbalance may result from class distribution, limited "Pass"-specific features, or model configuration. To improve performance, techniques like class balancing, enhanced feature engineering, and hyperparameter tuning are recommended.
 
 A Variance Inflation Factor (VIF) analysis was also performed to assess multicollinearity among input variables. The highest VIF value observed was 10 (Quarter), followed by To Go (9.7), TO_GO_DOWN_INTERACTION (8.9), and Down (7.9). While these values are on the higher end, they remain within the commonly accepted threshold (VIF < 10), suggesting that multicollinearity is present but not severe. Monitoring and potentially combining related features could still enhance model robustness and interpretability.
