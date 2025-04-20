@@ -18,6 +18,7 @@ This project applies machine learning techniques to classify NFL plays as either
 
 ## Exploratory Data Analysis
 ![EDA](https://github.com/MethapatV/NFL-Play-Type-Prediction/blob/main/EDA_NFL.png)
+
 The analysis shows that teams run and pass at nearly equal rates in the red zone, disproving the initial hypothesis that running is favored. Outside the red zone, passing is more common. These findings suggest that proximity to the end zone does not significantly influence play-calling tendencies, and that teams maintain a balanced strategy regardless of field position.
 
 ## Models
@@ -35,7 +36,8 @@ The confusion matrix shows that the model predicts "Run" plays more accurately t
 A Variance Inflation Factor (VIF) analysis was also performed to assess multicollinearity among input variables. The highest VIF value observed was 10 (Quarter), followed by To Go (9.7), TO_GO_DOWN_INTERACTION (8.9), and Down (7.9). While these values are on the higher end, they remain within the commonly accepted threshold (VIF < 10), suggesting that multicollinearity is present but not severe. Monitoring and potentially combining related features could still enhance model robustness and interpretability.
 
 ## Insight
-![Feature Importance](images/pm25_prediction_plot.png)
+![Feature Importance](https://github.com/MethapatV/NFL-Play-Type-Prediction/blob/main/Feature%20NFL.png)
+
 The XGBoost model identified Remain_Time_in_Seconds as the most influential feature in predicting play calls, emphasizing the impact of time pressure in late-game situations. YARD LINE 0-100 followed, showing the importance of field position, especially near the end zone. Historical trends, like previous_pass_attempts and previous_run_attempts, also ranked highly, reflecting teams’ behavioral patterns. The TO_GO_DOWN_INTERACTION feature provided more predictive value than TO GO or DOWN alone, while QUARTER was found to be the least impactful. These findings suggest that situational context and time dynamics are key drivers in play-calling, and refining top-ranked features may further improve model performance.
 
 ## Author
