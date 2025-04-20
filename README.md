@@ -17,7 +17,7 @@ This project applies machine learning techniques to classify NFL plays as either
 - **previous_run_attempts:** Counts the number of previous run plays by the team in the current game.
 
 ## Exploratory Data Analysis
-![EDA](images/pm25_prediction_plot.png)
+![EDA](https://github.com/MethapatV/NFL-Play-Type-Prediction/blob/main/EDA_NFL.png)
 The analysis shows that teams run and pass at nearly equal rates in the red zone, disproving the initial hypothesis that running is favored. Outside the red zone, passing is more common. These findings suggest that proximity to the end zone does not significantly influence play-calling tendencies, and that teams maintain a balanced strategy regardless of field position.
 
 ## Models
